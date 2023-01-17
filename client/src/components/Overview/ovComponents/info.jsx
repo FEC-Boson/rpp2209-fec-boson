@@ -6,7 +6,9 @@ var Info = () => {
   //confirm if props are being passed down
 
   //add return/render here
-
+  return (
+    <>INFO</>
+  )
 }
 
 export default Info;

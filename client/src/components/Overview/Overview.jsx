@@ -17,7 +17,13 @@ var Overview = () => {
 
   //add return/render here
   return (
-    <div>OVERVIEW IS RENDERING </div>
+    <div>
+      <div>OVERVIEW IS RENDERING </div>
+      <div><AddCart/></div>
+      <div><Gallery/></div>
+      <div><Info/></div>
+      <div><StyleSelect/></div>
+    </div>
   )
 
 }

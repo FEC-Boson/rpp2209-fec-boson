@@ -14,6 +14,7 @@ mongoose.connect('mongodb+srv://Ghasb001:HACKreactor_2209@clusterfec.bp6a2qd.mon
 })
 */
 
+
 // Set up the schema and model
 const ratingSchema = mongoose.Schema({
   // Add data later
