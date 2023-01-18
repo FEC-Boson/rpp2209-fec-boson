@@ -8,5 +8,9 @@ var AddCart = () => {
 
   //add return/render here
 
+  return (
+    <div>Add Cart</div>
+  )
+
 }
 export default AddCart;
