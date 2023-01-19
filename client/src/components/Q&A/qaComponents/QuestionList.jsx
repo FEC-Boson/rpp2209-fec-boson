@@ -1,4 +1,4 @@
-import react from 'react';
+import react from 'React';
 import Question from './Question.jsx';
 
 var QuestionList = (props) => {

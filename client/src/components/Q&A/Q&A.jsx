@@ -1,5 +1,4 @@
-import react from 'react';
-import reactDOM from 'react-dom';
+import react from 'React';
 import QuestionList from './qaComponents/QuestionList.jsx';
 import AnswerList from './qaComponents/AnswerList.jsx';
 import SearchQuestions from './qaComponents/SearchQuestions.jsx';
