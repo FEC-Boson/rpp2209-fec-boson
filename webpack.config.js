@@ -1,5 +1,4 @@
 var path = require("path");
-const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
 var SRC_DIR = path.join(__dirname, "/client/src");
 var DIST_DIR = path.join(__dirname, "/client/dist");
 
