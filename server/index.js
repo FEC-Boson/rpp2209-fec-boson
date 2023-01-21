@@ -113,7 +113,9 @@ Question and Answer
 */
 
 app.get('/questions', (req, res) => {
-  //make call to API for questions
+  //receive incoming request from client
+  //access the params from the request body
+  //make call to API for questions, passing down params
 });
 
 // connection (we will use the standard localhost:3000 as our development environment)
