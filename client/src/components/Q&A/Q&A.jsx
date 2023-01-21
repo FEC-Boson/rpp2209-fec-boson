@@ -3,11 +3,18 @@ import QuestionList from './qaComponents/QuestionList.jsx';
 import AnswerList from './qaComponents/AnswerList.jsx';
 import SearchQuestions from './qaComponents/SearchQuestions.jsx';
 import { useState, useEffect } from "react";
+import axios from 'axios';
 
 function QuestionAndAnswer (props) {
 
   const [questions, setQuestions] = useState([]);
 
+  useEffect(() => {
+    //on component render
+    //make axios req to server endpoint
+    axios.get('/questions', { params: { product_id: 71698, page: 1, count: 2 }})
+    //set questions state equal to the results of this call
+  });
 return (
   <div>
     <h4>QUESTIONS AND ANSWERS</h4>

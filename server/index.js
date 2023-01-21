@@ -106,7 +106,15 @@ app.get('/reviews/meta', (req, res) => {
     });
 });
 
+/*
+-------------------------
+Question and Answer
+-------------------------
+*/
 
+app.get('/questions', (req, res) => {
+  //make call to API for questions
+});
 
 // connection (we will use the standard localhost:3000 as our development environment)
 app.listen(3000, () => {
