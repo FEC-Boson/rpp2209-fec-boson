@@ -14,7 +14,8 @@ var fetchQuestions = (queryString) => {
     url: `http://app-hrsei-api.herokuapp.com/api/fec2/hr-rpp/qa/${queryString}`,
     //include authorization headers
     headers: {
-      authorization: `${process.env.TOKEN}`
+      'User-Agent': 'request',
+      'Authorization': `${process.env.TOKEN}`
     }
   });
 };
