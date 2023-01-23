@@ -9,7 +9,6 @@ import axios from "axios";
 var App = () => {
   //add state data as needed here
 
-
   //utilize useEffect to trigger desired actions on page load
   useEffect(() => {
 
@@ -18,7 +17,7 @@ var App = () => {
   return (
     <div>
       {/* <div><Overview /></div> */}
-      {/* <div><Related /></div> */}
+      <div><Related /></div>
       <div><QuestionAndAnswer /></div>
       {/* <div><Ratings /></div> */}
     </div>
