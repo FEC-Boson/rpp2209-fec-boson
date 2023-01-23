@@ -12,7 +12,7 @@ function QuestionAndAnswer (props) {
   useEffect(() => {
     //on component render
     //make axios req to server endpoint
-    axios.get('/questions')
+    axios.get('/questions', { params : {product_id: 71698}})
       .then((results) => {
         console.log('get questions results:', results);
          //set questions state equal to the results of this call
