@@ -12,9 +12,16 @@ function QuestionAndAnswer (props) {
   useEffect(() => {
     //on component render
     //make axios req to server endpoint
-    axios.get('/questions', { params: { product_id: 71698, page: 1, count: 2 }})
+    axios.get('/questions', { params: { product_id: 5, page: 1, count: 2 }})
+      .then((results) => {
+        console.log('get questions results:', results);
+      })
+      .catch((err) => {
+        console.log('error in axios get req in QA use effect:', err);
+      });
     //set questions state equal to the results of this call
   });
+
 return (
   <div>
     <h4>QUESTIONS AND ANSWERS</h4>

@@ -4,6 +4,8 @@ const app = express();
 const axios = require('axios');
 const { getAllProducts, getOne, singleStyle } = require('./helpers/overViewAPI.js');
 const { relatedProds } = require('./helpers/RelatedAPI.js');
+const { fetchQuestions } = require('./helpers/questionAnswerAPI.js');
+
 
 // basic middleware
 app.use(express.json());
@@ -113,9 +115,22 @@ Question and Answer
 */
 
 app.get('/questions', (req, res) => {
+  console.log('query:', req.query);
+  var queryString = req.query;
+  fetchQuestions(queryString)
+    .then((results) => {
+      console.log(results);
+      res.sendStatus(200);
+    })
+    .catch((err) => {
+      console.log('error in fetchQuestions helper');
+      res.sendStatus(404);
+    });
   //receive incoming request from client
   //access the params from the request body
   //make call to API for questions, passing down params
+  //if that succeeds, send back an success message response
+  //otherwise send a error response
 });
 
 // connection (we will use the standard localhost:3000 as our development environment)
