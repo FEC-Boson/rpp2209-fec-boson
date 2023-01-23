@@ -6,7 +6,6 @@ const axios = require('axios');
 
 //create helper method for retrieving a sorted list of questions from the API
 var fetchQuestions = (params) => {
-  console.log(`in fetch questions`, params.product_id);
   let options = {
     url: `http://app-hrsei-api.herokuapp.com/api/fec2/hr-rpp/qa/questions`,
     headers: {
@@ -14,7 +13,9 @@ var fetchQuestions = (params) => {
       'Authorization': `${process.env.TOKEN}`
     },
     params: {
-      product_id: params.product_id
+      product_id: params.product_id,
+      page: params.page,
+      count: params.count
     }
   };
   //make a get request to the Atelier API using axios

@@ -115,12 +115,11 @@ Question and Answer
 */
 
 app.get('/questions', (req, res) => {
-  console.log('query:', req.query);
-  var queryString = req.query;
-  fetchQuestions(queryString)
+  var params = req.query;
+  fetchQuestions(params)
     .then((results) => {
-      console.log(results);
-      res.sendStatus(200);
+      // console.log('questions array:', results.data.results);
+      res.status(200).send(results.data.results);
     })
     .catch((err) => {
       console.log('error in fetchQuestions helper');
