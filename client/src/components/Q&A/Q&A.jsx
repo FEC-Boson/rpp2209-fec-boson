@@ -15,11 +15,11 @@ function QuestionAndAnswer (props) {
     axios.get('/questions', { params: { product_id: 5, page: 1, count: 2 }})
       .then((results) => {
         console.log('get questions results:', results);
+         //set questions state equal to the results of this call
       })
       .catch((err) => {
         console.log('error in axios get req in QA use effect:', err);
       });
-    //set questions state equal to the results of this call
   });
 
 return (

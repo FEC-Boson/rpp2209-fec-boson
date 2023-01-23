@@ -5,12 +5,17 @@ const axios = require('axios');
 const { getAllProducts, getOne, singleStyle } = require('./helpers/overViewAPI.js');
 const { relatedProds } = require('./helpers/RelatedAPI.js');
 const { fetchQuestions } = require('./helpers/questionAnswerAPI.js');
+// const baseUrlParser = function(req, res, next) {
+//   var baseUrl = req.baseUrl;
+//   next();
+// };
 
 
 // basic middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../client/dist')));
+// app.use(baseUrlParser);
 
 // basic route to get us started
 app.get('/', (req, res) => {
