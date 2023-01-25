@@ -63,7 +63,7 @@ var Overview = () => {
   } else {
     return (
       <div>
-        <div>OVERVIEW IS RENDERING </div>
+        <div>Product Overview </div>
        <div>{skuInfo.length > 0 && <Info info={skuInfo}/>}</div>
         <AddCart cart={SKUS}/>
         <Gallery pics={SKUS}/>
