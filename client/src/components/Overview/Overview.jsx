@@ -26,8 +26,6 @@ var Overview = () => {
 
   //single item
   var infoFetcher = (id) => {
-    //var array = [];
-    console.log('IDS', id)
       return axios.get(`/products/${id}`)
         .then(data => {
           return data.data;
@@ -41,10 +39,8 @@ var Overview = () => {
     for (var i = 0; i < SKUS.length; i++) {
       await infoFetcher(SKUS[i].id)
       .then (a => {
-        console.log('a', a);
         saver.push(a);
       })
-      console.log('finally works!!!', saver)
       setInfo(saver);
     }
   }
