@@ -29,7 +29,6 @@ app.get('/products', (req, res) => {
 //test for single product
 app.get('/products/:id', (req, res) => {
   var uniqueId = req.params.id;
-
   getOne(uniqueId, (fail, pass) => {
     if (fail) {
       res.sendStatus(404);
@@ -40,15 +39,15 @@ app.get('/products/:id', (req, res) => {
 });
 
 //test for single style
-app.get('/products/71697/styles', (req, res) => {
-  singleStyle((fail, pass) => {
-    if (fail) {
-      res.sendStatus(404);
-    } else {
-      res.send(pass).status(200);
-    }
-  })
-});
+// app.get('/products/71697/styles', (req, res) => {
+//   singleStyle((fail, pass) => {
+//     if (fail) {
+//       res.sendStatus(404);
+//     } else {
+//       res.send(pass).status(200);
+//     }
+//   })
+// });
 
 app.get('/products/71697/related', (req, res) => {
 
