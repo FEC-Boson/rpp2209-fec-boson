@@ -79,6 +79,22 @@
   cursor: pointer;
 }
 
+.styleSelectButton{
+  background-color: transparent;
+  border: none;
+  border-color: black;
+  cursor: pointer;
+}
+
+.ovcarousel-items {
+  display: flex;
+  overflow: hidden;
+  width: 70%;
+  margin-right: 4%;
+  margin-left: 4%;
+}
+
+
 /*
 -----------Ratings-----------
 */
