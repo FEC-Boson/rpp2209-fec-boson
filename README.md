@@ -1,12 +1,12 @@
-# FEC (Front End Capstone) Atelier
+# Atelier E-Commerce Site
 
-This e-commerce application for Atelier facilitates a simple and pleasant user experience for consumers. Created by Team Boson, this application boasts a score of 100 in the area of Best Practices. Performance scores range from approximately 52-80, depending on user's machine and network. The application has an accessibility rating of 72 according to our Lighthouse Audit report. This application particularly excels in accessibility as it pertains to page elements being labeled for screen readers.
+This E-Commerce application for Atelier facilitates a simple and pleasant user experience for consumers. Created by Team Boson, this application boasts a score of 100 in the area of Best Practices, an Accessibility score of 72, and a Performance score of 80 based on metrics collected from a Google Lighthouse Audit.
 
 <br>
 
 ##  Team Boson
 - Guillermo Hasbun (Overview)
-- Maddie Sime (Related)
+- Maddie Sime (Related Products)
 - Fig Fishkin (Questions and Answers)
 - Harry Meng (Ratings & Reviews)
 
@@ -49,7 +49,7 @@ This e-commerce application for Atelier facilitates a simple and pleasant user e
 3. Open the repo in VS Code
 4. Run npm install
 5. Create a .env file
-6. Add the Token to the file
+6. Add the token to the file
 7. Open two terminals on VS Code
 8. Run npm run react-dev on one terminal
 9. Run npm run server-dev on the other terminal
@@ -58,22 +58,22 @@ This e-commerce application for Atelier facilitates a simple and pleasant user e
 <br>
 
 ## Testing
-The repo uses Jest to test the components, and checks the app coverage for optimal performance. Jest also uses a react testing environment to create a render, which allows us to feed the test data, and check the output.
+This project uses Jest as a testing framework and checks the application's test coverage for optimal performance. Jest is paired with React Testing Library, rendering test components and mocking the organic flow of data through the system.
 
 <br>
 
 ## The sprints in phases
 - Phase 0
-  > During this phase, we each were randomly assigned our app widgets. Guillermo Hasbun was assigned Product Overview, Harry Meng was assigned Ratings, Fig Fishkin was assigned Q&A, and Maddie Sime was assigned Related. The main portion of Phase 0 was spent delegating our duties as a team via the Business Requirements Document, and setting community standards for each team member to follow. We worked on understanding our Git Workflow, and created engineering journals to help keep track of our coding time and reflections.
+  > At the start of Phase 0, app widgets were distributed amongst team members. Guillermo Hasbun was assigned Product Overview, Harry Meng was assigned Ratings, Fig Fishkin was assigned Q&A, and Maddie Sime was assigned Related Products. The main portion of Phase 0 was spent delegating our duties as a team via the Business Requirements Document, and setting community standards for each team member to follow. We worked on understanding our Git Workflow, and created engineering journals to help keep track of our coding time and reflections.
 
 - Phase 1
   >  During this phase, we worked on our widget layouts and components. We began utilizing Trello more often to write tickets to render our app components, as well as structure our components in a cleaner organization style. Working on our branches as a group proved to be rocky at first, but communication was key to keeping us on track. This phase allowed each group member the ability to work on their respective component independently, but also ask for assistance for bugs and general guidance.
 
 - Phase 2
-  > During phase 2, we continued working on implementing the functionality of our widgets. We continued to utilize and update Trello and continued to strengthen our Git/Github workflow skills. We got some exposure to Chrome DevTools' Lighthouse tool which allowed us to assess multiple aspects of our application's performance. For those of us who have widgets that require information from our teammate's widgets, we began to communicate around how we will accomplish gaining access to that information. Overall, we dove deeper into the requirements of our widgets and continued to work as a team.
+  > During Phase 2, we continued working on implementing the functionality of our widgets. We continued to utilize and update Trello and continued to strengthen our Git/Github workflow skills. We got some exposure to Chrome DevTools' Lighthouse tool which allowed us to assess multiple aspects of our application's performance. For those of us who have widgets that require information from our teammate's widgets, we began to communicate around how we will accomplish gaining access to that information. Overall, we dove deeper into the requirements of our widgets and continued to work as a team.
 
 - Phase 3
-  > During phase 3, we continued working on the functionality and styling for our widgets, and began to add unit/integration test suite to cross check the app. Then we deployed the app to Amazon Web Service (AWS), therefore it could be viewed publicly.
+  > During Phase 3, we continued working on the functionality and styling for our widgets, and began to add unit/integration tests to cross-check the app. Then we deployed the app to an Amazon Web Service (AWS) EC2 instance, where it could be viewed publicly.
 
 - Phase 4
-  > During phase 4, we worked on the CSS properties together to make the app looks pretty and clean. There are two theme color, light and dark by clicking on the button to switch over. Ran the google page speed against the app, and implemented the optimizations, such as compress the files, remove duplicate API calls in the individual widget and etc. Tested the app in most popular browsers, Safari/Google Chrome/Firefox/Edge, and all work well.
+  > During Phase 4, we worked on the overall CSS styling together to make the app appear cohesive and clean. There are two color modes: light and dark (toggled by clicking on the "Change Theme" button). We implemented optimizations suggested via Google Lighthouse reports, such as compressing files and other small accessibility improvements. We removed duplicate API calls in the separate widgets and streamlined the flow of data. We also viewed the application in most popular browsers, like Safari/Google Chrome/Firefox/Edge, and satisfied the requirements as outlined by our stakeholders in the SLA.
